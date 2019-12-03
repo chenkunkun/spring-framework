@@ -35,7 +35,6 @@ import org.springframework.core.AliasRegistry;
  * and GenericApplicationContext.
  *
  * @author Juergen Hoeller
- * @since 26.11.2003
  * @see org.springframework.beans.factory.config.BeanDefinition
  * @see AbstractBeanDefinition
  * @see RootBeanDefinition
@@ -44,6 +43,11 @@ import org.springframework.core.AliasRegistry;
  * @see org.springframework.context.support.GenericApplicationContext
  * @see org.springframework.beans.factory.xml.XmlBeanDefinitionReader
  * @see PropertiesBeanDefinitionReader
+ * @since 26.11.2003
+ */
+
+/**
+ * 定义对BeanDefinition的各种增删改操作
  */
 public interface BeanDefinitionRegistry extends AliasRegistry {
 

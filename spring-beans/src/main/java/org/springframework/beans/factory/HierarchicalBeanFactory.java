@@ -28,8 +28,12 @@ import org.springframework.lang.Nullable;
  *
  * @author Rod Johnson
  * @author Juergen Hoeller
- * @since 07.07.2003
  * @see org.springframework.beans.factory.config.ConfigurableBeanFactory#setParentBeanFactory
+ * @since 07.07.2003
+ */
+
+/**
+ * 继承BeanFactory,也就是在BeanFactory定义的功能的基础上增加了对parentFactory的支持
  */
 public interface HierarchicalBeanFactory extends BeanFactory {
 

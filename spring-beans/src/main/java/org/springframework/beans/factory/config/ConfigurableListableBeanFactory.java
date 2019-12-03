@@ -36,8 +36,12 @@ import org.springframework.lang.Nullable;
  * plug'n'play even when needing access to bean factory configuration methods.
  *
  * @author Juergen Hoeller
- * @since 03.11.2003
  * @see org.springframework.context.support.AbstractApplicationContext#getBeanFactory()
+ * @since 03.11.2003
+ */
+
+/**
+ * BeanFactory配置清单，指定忽略类型及接口等
  */
 public interface ConfigurableListableBeanFactory
 		extends ListableBeanFactory, AutowireCapableBeanFactory, ConfigurableBeanFactory {

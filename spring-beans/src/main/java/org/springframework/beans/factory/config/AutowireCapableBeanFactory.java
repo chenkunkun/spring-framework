@@ -54,10 +54,14 @@ import org.springframework.lang.Nullable;
  * simply cast the passed-in BeanFactory to AutowireCapableBeanFactory.
  *
  * @author Juergen Hoeller
- * @since 04.12.2003
  * @see org.springframework.beans.factory.BeanFactoryAware
  * @see org.springframework.beans.factory.config.ConfigurableListableBeanFactory
  * @see org.springframework.context.ApplicationContext#getAutowireCapableBeanFactory()
+ * @since 04.12.2003
+ */
+
+/**
+ * 提供创建bean、自动注入、初始化以及应用bean的后处理器
  */
 public interface AutowireCapableBeanFactory extends BeanFactory {
 
@@ -395,6 +399,6 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 */
 	@Nullable
 	Object resolveDependency(DependencyDescriptor descriptor, @Nullable String requestingBeanName,
-			@Nullable Set<String> autowiredBeanNames, @Nullable TypeConverter typeConverter) throws BeansException;
+							 @Nullable Set<String> autowiredBeanNames, @Nullable TypeConverter typeConverter) throws BeansException;
 
 }

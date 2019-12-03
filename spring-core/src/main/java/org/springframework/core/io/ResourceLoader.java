@@ -33,11 +33,15 @@ import org.springframework.util.ResourceUtils;
  * context's resource loading strategy.
  *
  * @author Juergen Hoeller
- * @since 10.03.2004
  * @see Resource
  * @see org.springframework.core.io.support.ResourcePatternResolver
  * @see org.springframework.context.ApplicationContext
  * @see org.springframework.context.ResourceLoaderAware
+ * @since 10.03.2004
+ */
+
+/**
+ * 定义资源加载器，主要应用于根据给定的资源文件地址返回对应的Resource
  */
 public interface ResourceLoader {
 

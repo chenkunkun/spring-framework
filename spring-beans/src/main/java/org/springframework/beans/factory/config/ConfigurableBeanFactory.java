@@ -43,10 +43,14 @@ import org.springframework.util.StringValueResolver;
  * plug'n'play and for special access to bean factory configuration methods.
  *
  * @author Juergen Hoeller
- * @since 03.11.2003
  * @see org.springframework.beans.factory.BeanFactory
  * @see org.springframework.beans.factory.ListableBeanFactory
  * @see ConfigurableListableBeanFactory
+ * @since 03.11.2003
+ */
+
+/**
+ * 提供配置Factory的各种方法
  */
 public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, SingletonBeanRegistry {
 

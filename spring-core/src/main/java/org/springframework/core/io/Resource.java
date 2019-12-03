@@ -35,7 +35,6 @@ import org.springframework.lang.Nullable;
  * certain resources. The actual behavior is implementation-specific.
  *
  * @author Juergen Hoeller
- * @since 28.12.2003
  * @see #getInputStream()
  * @see #getURL()
  * @see #getURI()
@@ -48,6 +47,11 @@ import org.springframework.lang.Nullable;
  * @see ClassPathResource
  * @see ByteArrayResource
  * @see InputStreamResource
+ * @since 28.12.2003
+ */
+
+/**
+ * Spring对其内部使用到的资源实现了自己的抽象结构：Resource接口来风中底层资源
  */
 public interface Resource extends InputStreamSource {
 

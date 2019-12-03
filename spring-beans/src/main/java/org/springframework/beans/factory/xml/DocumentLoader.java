@@ -25,8 +25,12 @@ import org.xml.sax.InputSource;
  * Strategy interface for loading an XML {@link Document}.
  *
  * @author Rob Harrop
- * @since 2.0
  * @see DefaultDocumentLoader
+ * @since 2.0
+ */
+
+/**
+ * 定义从资源文件加载到转换为Document的功能
  */
 public interface DocumentLoader {
 

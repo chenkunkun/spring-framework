@@ -34,8 +34,12 @@ import org.springframework.lang.Nullable;
  * readers that want to follow standard naming conventions.
  *
  * @author Juergen Hoeller
- * @since 1.1
  * @see org.springframework.core.io.Resource
+ * @since 1.1
+ */
+
+/**
+ * 主要定义资源文件读取并转换为BeanDefinition的各个功能
  */
 public interface BeanDefinitionReader {
 
