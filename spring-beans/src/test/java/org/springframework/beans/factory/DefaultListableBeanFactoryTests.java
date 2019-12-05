@@ -132,6 +132,9 @@ class DefaultListableBeanFactoryTests {
 	private DefaultListableBeanFactory lbf = new DefaultListableBeanFactory();
 
 
+	/**
+	 * 未引用的singletonwas已实例化
+	 */
 	@Test
 	void unreferencedSingletonWasInstantiated() {
 		KnowsIfInstantiated.clearInstantiationRecord();
@@ -143,6 +146,9 @@ class DefaultListableBeanFactoryTests {
 		assertThat(KnowsIfInstantiated.wasInstantiated()).as("singleton was instantiated").isTrue();
 	}
 
+	/**
+	 * 延迟初始化
+	 */
 	@Test
 	void lazyInitialization() {
 		KnowsIfInstantiated.clearInstantiationRecord();
@@ -159,6 +165,9 @@ class DefaultListableBeanFactoryTests {
 		assertThat(KnowsIfInstantiated.wasInstantiated()).as("singleton was instantiated").isTrue();
 	}
 
+	/**
+	 * factoryBean没有创建原型
+	 */
 	@Test
 	void factoryBeanDidNotCreatePrototype() {
 		Properties p = new Properties();

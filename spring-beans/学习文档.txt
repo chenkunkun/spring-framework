@@ -1,0 +1,11 @@
+1、核心类
+DefaultListableBeanFactory
+XmlBeanDefinitionReader
+
+2、是什么？
+
+
+3、怎么玩？
+
+
+4、面试题？

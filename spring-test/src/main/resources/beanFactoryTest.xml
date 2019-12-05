@@ -3,5 +3,17 @@
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="myTestBean" class="learn.demo.domain.MyTestBean"/>
+	<!--Demo2019120301测试bean-->
+	<!--<bean id="myTestBean" class="learn.demo.domain.MyTestBean"/>-->
+
+	<!--Demo2019120401测试循环依赖-->
+	<bean id="testA" class="learn.demo.domain.TestA">
+		<constructor-arg index="0" ref="testB"/>
+	</bean>
+	<bean id="testB" class="learn.demo.domain.TestB" scope="singleton">
+		<constructor-arg index="0" ref="testC"/>
+	</bean>
+	<bean id="testC" class="learn.demo.domain.TestC" scope="singleton">
+		<constructor-arg index="0" ref="testA"/>
+	</bean>
 </beans>

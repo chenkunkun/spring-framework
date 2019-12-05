@@ -69,6 +69,9 @@ public class ClassPathResource extends AbstractFileResolvingResource {
 	 * @param path 在classPath下的绝对路径
 	 */
 	public ClassPathResource(String path) {
+		/**
+		 * ClassLoader为空
+		 */
 		this(path, (ClassLoader) null);
 	}
 
@@ -92,6 +95,7 @@ public class ClassPathResource extends AbstractFileResolvingResource {
 			pathToUse = pathToUse.substring(1);
 		}
 		this.path = pathToUse;
+
 		this.classLoader = (classLoader != null ? classLoader : ClassUtils.getDefaultClassLoader());
 	}
 
